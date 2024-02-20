@@ -1,155 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Call of duty AK117 Release</title>
-    <style>
-        body,html {
-            height: 100%;
-            margin: 0;
-            background: url('Image/portrait-young-african-american-man-with-vr-glasses.jpg');
-            background-size: cover;
-        }
-
-        .bgcolor {
-            background-color: rgba(0, 0, 0, 0.5);
-            height: 100%;
-            position: relative;
-            color: white;
-            font-size: 25px;
-        }
-
-        .middle {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-        }
-
-        .countdown-container {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 20px;
-        }
-
-        .countdown-item {
-            background-color: rgba(255, 255, 255, 0.2);
-            padding: 10px;
-            margin: 0 5px;
-            border-radius: 5px;
-        }
-
-        .hr {
-            margin: auto;
-            width: 40%;
-        }
-        .p2{
-            font-size: 15px;
-            font-weight: bold;
-            text-align: left;
-            font-family: Arial;
-        }
-        .p1{
-            text-align: center;
-            text-decoration: underline;
-        }
-    </style>
-
-</head>
-
-<!-- <body>
-    <div class="bgcolor">
-        <div class="middle">
-            <img src="/Image/Apple visiion pro images.jpg" alt="APPLE VR GOOOGLES" style="width: 100px; height: 100px;">
-            <h1>APPLE VISION PRO</h1>
-            <hr>
-            <div class="countdown-container">
-                <div class="countdown-item" id="days"></div>
-                <div class="countdown-item" id="hours"></div>
-                <div class="countdown-item" id="minutes"></div>
-                <div class="countdown-item" id="seconds"></div>
-            </div>
-            <p id="demo" style="font-size: 30px"></p>
-        </div>
-
-
-        <script>
-            var countDownDate = new Date("March, 2024 1:00:00").getTime();
-            var countdownfunction = setInterval(function () {
-
-                var now = new Date().getTime();
-
-                var distance = countDownDate - now;
-
-                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-                document.getElementById("demo").innerHTML = days + "d " + hours + "h" + minutes + "m" + seconds + "s ";
-
-
-                if (distance < 0) {
-                    clearInterval(countdownfunction);
-                    document.getElementById("demo").innerHTML = "EXPIRED";
-                }
-            })
-
-        </script>
- -->
- <body>
-    <div class="bgcolor">
-        <div class="middle">
-            <img class="AK117" src="Image/Apple visiion pro images.jpg" alt="Vision pro" style="width: 400px; height:250px; border-radius: 10px;">
-            <h1>New Apple vision pro</h1>
-            <p class="p1">Launching on March, 2024</p>
-            <p class="p2">Apple Vision Pro can transform any room into your own personal theater. Expand your movies, shows, and games up to the perfect size while feeling like you’re part of the action with Spatial Audio.</p>
-            <hr>
-            <div class="countdown-container">
-                <div class="countdown-item" id="days-container">
-                    <span id="days"></span> days
-                </div>
-                <div class="countdown-item" id="hours-container">
-                    <span id="hours"></span> hours
-                </div>
-                <div class="countdown-item" id="minutes-container">
-                    <span id="minutes"></span> minutes
-                </div>
-                <div class="countdown-item" id="seconds-container">
-                    <span id="seconds"></span> seconds
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>APPLE VISION PRO Release</title>
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="bgcolor">
+            <div class="middle">
+                <img class="AK117" src="Image/Apple visiion pro images.jpg" alt="Vision pro" style="width: 400px; height:250px; border-radius: 10px;">
+                <h1>New Apple vision pro</h1>
+                <p class="p1">Launching on March, 2024</p>
+                <p class="p2">Apple Vision Pro can transform any room into your own personal theater. Expand your movies, shows, and games up to the perfect size while feeling like you’re part of the action with Spatial Audio.</p>
+                <hr>
+                <div class="countdown-container">
+                    <div class="countdown-item" id="days-container">
+                        <span id="days"></span> days
+                    </div>
+                    <div class="countdown-item" id="hours-container">
+                        <span id="hours"></span> hours
+                    </div>
+                    <div class="countdown-item" id="minutes-container">
+                        <span id="minutes"></span> minutes
+                    </div>
+                    <div class="countdown-item" id="seconds-container">
+                        <span id="seconds"></span> seconds
+                    </div>
                 </div>
             </div>
+
+                <script src="js/app.js"></script>
         </div>
+    </body>
 
-        <script>
-            var countDownDate = new Date("March, 2024 1:00:00").getTime();
-            var countdownfunction = setInterval(function () {
-
-                var now = new Date().getTime();
-                var distance = countDownDate - now;
-
-                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-                // Update the content of each container
-                document.getElementById("days").innerHTML = days;
-                document.getElementById("hours").innerHTML = hours;
-                document.getElementById("minutes").innerHTML = minutes;
-                document.getElementById("seconds").innerHTML = seconds;
-
-                if (distance < 0) {
-                    clearInterval(countdownfunction);
-                    document.getElementById("demo").innerHTML = "EXPIRED";
-                }
-            })
-
-        </script>
-    </div>
-</body>
-
-</html>
+    </html>
